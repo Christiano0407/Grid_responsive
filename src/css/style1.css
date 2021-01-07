@@ -21,10 +21,13 @@ a{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
     grid-template-rows: repeat(3, 1fr);
     background-color: #000000;
     border: 1px solid red;  
+    gap: .3rem .6rem;
+    flex-wrap: wrap;
 }
 .item{
     padding: 1rem;
