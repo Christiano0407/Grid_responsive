@@ -12,7 +12,7 @@ html{
 }
 body {
     font-family: sans-serif;
-    background-color: #e7e7e7;
+    background-color: var(--color-two);
     width: 100%;
     height: 100vh;
 }
@@ -24,14 +24,14 @@ a{
     /* grid-template-columns: repeat(4, 1fr); */
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     grid-template-rows: repeat(3, 1fr);
-    background-color: #000000;
+    background-color: #d1cdcd;
     border: 1px solid red;  
     gap: .3rem .6rem;
     flex-wrap: wrap;
 }
 .item{
     padding: 1rem;
-    color: var(--color-two);
+    color: var(--color-one);
 }
 .item:nth-of-type(3){
     background-color: yellowgreen;
@@ -42,4 +42,31 @@ a{
 }
 .item:nth-of-type(5){
     background-color: blueviolet;
+}
+
+/* // 2) */
+
+.containerTwo{
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows:25% 100px 50px;
+    gap: 2px;
+    background-color: rgb(206, 175, 255);
+}
+.items1 {
+    grid-column-start: 2;
+    grid-column-end: 5; 
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgb(128, 4, 4);
+    color: var(--color-two);
+    text-align: center;
+    font-size: 2rem;
+}
+.items2 {
+    background-color: steelblue;
+    grid-column-start: 1;
+    grid-column-end:  4;
+    grid-row-start: 2;
+    grid-row-end: span 2;
 }
