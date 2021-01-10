@@ -23,20 +23,28 @@ a{
 .container{
     display: grid;
     grid-template-columns: 20rem 20rem 20rem 20rem;
-    grid-template-rows: auto;
+     grid-template-rows: auto;
+  /*  grid-template-rows: [row1-start] 25px [row1-end row2-start] 25px [row2-end]; */
     grid-template-areas: "header header header header"
                          "main main . sidebar"
                          "footer footer footer footer";
     gap: .3rem;
     background-color: var(--color-Two);
     height: 100vh;
+   /*  flex-wrap: wrap; */
 }
 .item {
     color: var(--color-Two);
 }
 .header {
     grid-area: header;
+  /* grid-area: 1 / col4-start / last-line / 6; */
     background-color: var(--color-One);
+   /*  justify-self: start; */
+ /*   justify-self: end; */
+      /* justify-self: center; */
+     /*  justify-self: stretch */
+    
 }
 .main {
     grid-area: main;
@@ -49,4 +57,4 @@ a{
 .footer{
     grid-area: footer;
     background-color: var(--color-five);
-}
+} 
