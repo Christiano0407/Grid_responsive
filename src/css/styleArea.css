@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+:root{
+    --color-One:#000000; 
+    --color-Two:#ffffff; 
+    --color-three: #c0c0c0; 
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: var(--color-three);
+}
+a {
+    text-decoration: none;
+}
