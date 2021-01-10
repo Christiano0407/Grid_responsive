@@ -20,3 +20,44 @@ body {
 a {
     text-decoration: none;
 }
+/* .container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: .3rem;
+    background-color: var(--color-Two);
+} */
+/* .item{
+    padding: 1rem;
+} */
+/* // Layout */
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "header header"
+                         "left content"
+                         "footer footer";
+    gap: 1rem;
+    background-color: var(--color-Two);
+}
+.item {
+    color: var(--color-Two);
+}
+.header{
+grid-area: header;
+background-color: darkmagenta;
+}
+.left{
+grid-area: left;
+background-color: darkorange;
+}
+.content{
+grid-area: content;
+background-color: rgb(209, 17, 0);
+}
+.footer{
+grid-area: footer;
+background-color: green;
+}
