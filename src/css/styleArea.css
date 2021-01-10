@@ -34,8 +34,10 @@ a {
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 20rem 1fr;
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-rows: 10rem 1fr 15rem;
     grid-template-areas: "header header"
                          "left content"
                          "footer footer";
