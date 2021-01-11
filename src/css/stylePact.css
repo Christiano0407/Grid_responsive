@@ -20,3 +20,38 @@ body {
 a {
     text-decoration: none;
 }
+.container{
+    display: grid;
+    grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr  [final];
+    /* grid-template-rows: repeat(2, 20rem); */
+    grid-template-rows:[inicio] 20rem [inicio2] 20rem [final];
+    gap: .5rem;
+    height: 100vh;
+    /* grid-auto-flow: row; */
+   /*  grid-auto-flow: column; */
+ /*   grid-auto-columns: 20rem; */
+}
+.item {
+    background-color: var(--color-One);
+    padding: 1rem;
+}
+.item:nth-of-type(1){
+    grid-column: inicio / destacado-end;
+    background-color: var(--color-five);
+    grid-row: inicio / final;
+}
+.item:nth-of-type(2){
+    grid-column: destacado-end / destacado2-end;
+    background-color: var(--color-Three);
+    grid-row: inicio / final;
+}
+.item:nth-of-type(3){
+    grid-column: destacado2-end / final;
+    background-color: var(--color-four);
+}
+ .item:nth-of-type(4){
+
+}
+.item:nth-of-type(5){
+
+} 
