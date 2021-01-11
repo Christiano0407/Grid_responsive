@@ -37,21 +37,40 @@ a {
 }
 .item:nth-of-type(1){
     grid-column: inicio / destacado-end;
-    background-color: var(--color-five);
+  /*   background-color: var(--color-five); */
     grid-row: inicio / final;
+    background-image: url(../assets/img/kyle-smith-4qYHqQqlwM4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    /* object-fit: cover; */
 }
 .item:nth-of-type(2){
     grid-column: destacado-end / destacado2-end;
-    background-color: var(--color-Three);
+    /* background-color: var(--color-Three); */
     grid-row: inicio / final;
+    background-image: url(../assets/img/daniel-korpai-lTb4gJK_l1Q-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .item:nth-of-type(3){
     grid-column: destacado2-end / final;
-    background-color: var(--color-four);
+   /*  background-color: var(--color-four); */
+    background-image: url(../assets/img/aud2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
  .item:nth-of-type(4){
-
+   background-image: url(../assets/img/aud1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 .item:nth-of-type(5){
-
+ background-image: url(../assets/img/daniel-korpai-lTb4gJK_l1Q-unsplash.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
 } 
