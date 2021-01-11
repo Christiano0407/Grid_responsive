@@ -16,4 +16,59 @@ html{
 body {
     width: 100%;
     height: 100vh;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover; 
+} 
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .5rem;
+    height: 100vh;
+}
+
+.post {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 20rem;
+}
+.post-image{
+    margin: 0;
+}
+.post-image img {
+    width: 100%;
+    vertical-align: top;
+}
+.post-overlay{
+ position: absolute;
+ background: rgba(0, 0, 0, .4);
+ left: 0;
+ right: 0;
+ bottom: 0;
+ top: 0;
+ display: none;
+ align-items: center;
+ justify-content: center;
+ color: var(--color-Two);
+ text-align: center;
+}
+.post:hover .post-overlay{
+ display: flex;
+}
+.post-likes,
+.post-comments {
+    width: 8rem;
+    margin: .5rem;
+    font-weight: bold;
+    display: inline-block;
 }
