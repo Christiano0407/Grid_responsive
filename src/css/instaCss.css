@@ -30,17 +30,18 @@ a{
 
 .post-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: .5rem;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    /* grid-template-rows: auto; */
+    gap: 28px;
     height: 100vh;
+    justify-content: center;
 }
 
 .post {
     cursor: pointer;
     position: relative;
     display: block;
-    width: 20rem;
+   /*  width: 20rem; */
 }
 .post-image{
     margin: 0;
@@ -71,4 +72,10 @@ a{
     margin: .5rem;
     font-weight: bold;
     display: inline-block;
+}
+
+@media screen and (max-width: 768px){
+    .post-list{
+        gap: .3rem;
+    }
 }
