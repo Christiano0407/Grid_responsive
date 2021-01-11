@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --color-One: #000000;
+    --color-Two: #ffffff;
+    --color-Three:#04DB97; 
+    --color-four:#45B5ED ; 
+    --color-five: #FA4534; 
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
