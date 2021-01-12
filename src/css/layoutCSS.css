@@ -28,7 +28,7 @@ img{
     object-fit: cover; 
 } 
 .badge img {
-    width: 5rem;
+    width: 8rem;
     /* height: 2rem; */
     margin-bottom: 2rem;
 }
@@ -43,7 +43,36 @@ p {
 .title{
     font-size: 3rem;
     font-weight: bold;
-    margin: 0;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
+}
+.form{
+    text-align: center;
+    background-color: rgba(255, 255, 255, .9);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.form input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1rem solid #dbdbe2;
+    border-radius: .5rem;
+    box-sizing: border-box;
+}
+.form p {
+    font-size: 2rem;
+    color: #3a3b3f;
+    margin-bottom: 1rem;
+}
+.form button {
+    background-color: #3592c0;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    border-bottom: .5rem solid #2d789e;
+    display: inline-block;
+    border: none;
+    font-size: 1.6rem;
 }
