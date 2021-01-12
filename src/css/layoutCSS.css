@@ -27,3 +27,23 @@ img{
     background-position: center;
     object-fit: cover; 
 } 
+.badge img {
+    width: 5rem;
+    /* height: 2rem; */
+    margin-bottom: 2rem;
+}
+.hero {
+    background-color: var(--color-four);
+    color: white;
+    padding: 3.2rem 1.5rem;
+}
+p {
+    font-family: sans-serif;
+}
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
